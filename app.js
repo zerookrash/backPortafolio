@@ -12,7 +12,8 @@ app.post('/formulario', (req, res) => {
     res.status(200).send();
 });
 
+let port = process.env.PORT || 3000;
 
-app.listen((process.env.PORT || 3000), () => {
+app.listen(port, function() {
     console.log(`Servidor conectado ${process.env.PORT}`)
 });
