@@ -13,6 +13,6 @@ app.post('/formulario', (req, res) => {
 });
 
 
-app.listen(3000, () => {
-    console.log('Servidor conectado')
+app.listen((process.env.PORT || 3000), () => {
+    console.log(`Servidor conectado ${process.env.PORT}`)
 });
